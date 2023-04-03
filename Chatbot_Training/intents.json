@@ -1,0 +1,149 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day","hi there", "hello", "haroo", "yaw", "wassup", "hey", "holla"],
+         "responses": ["Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?"],
+         "context_set": ""
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        },
+        {"tag": "noanswer",
+        "patterns": [""],
+        "responses": ["Please give me more info", "Not sure I understand that"],
+        "context": [""]
+        },
+        {"tag": "AI",
+        "patterns": ["Define AI"],
+        "responses": ["Artificial Intelligence is the branch of engineering and science devoted to constructing machines that think.", " AI is the field of science which concerns itself with building hardware and software that replicates the functions of the human mind."],
+        "context": [""]       
+        },
+        {"tag": "tasks",
+         "patterns": ["What can you do?", "What is your features", "list down your features", "share your abilities"],
+         "responses": ["I can do whatever you asks me to do", "I can talk and do things for you", "Right now i'm in developing stage as soon i'm developed, I can do everything"]
+        },
+        {"tag": "talk",
+         "patterns": [ "sing me a song", "talk to me" ],
+         "responses": ["Yeah surely", "do you want me to sing"]
+        },
+        {"tag": "lang",
+         "patterns": ["The language you are written in"],
+         "responses": [" Python.", " I am written in Python."],
+         "context": ""
+        },
+        {"tag": "os",
+         "patterns": ["Your operating systems"],
+         "responses": ["My software runs on all operating systems including Windows, Linux and Mac OS.", " Any OS that will run Python."],
+         "context": [""]
+        },
+        {"tag": "aboutQNEbot",
+         "patterns": ["Who are you?", "tell me about yourself", "tell me about you", "are you an AI"],
+         "responses": ["Hi I'm QNEbot and I'm an AI created for chatting with humans","QNEbot, a very advance chatbot", "QNEbot, chatbot of future", "Yes, I'm QNEbot", "You can call me QNEbot"],
+	 "context_set": ""
+	},
+        {"tag": "botgender",
+        "patterns": ["tell me your gender", "gender"],
+        "responses": ["Bots usually don't have a gender", "I am a male", "I am a female", "Neither", "Both"],
+        "context": ""
+        },
+	{"tag": "aboutme",
+         "patterns": ["Who am I?", "tell me about myself", "identify me" ],
+         "responses": ["Yes, you are a human","You are a dumb person asking a machine about yourself", "Sorry i can't tell that in public, maybe you are batman"],
+	 "context_set": ""
+	},
+	{"tag": "creator",
+         "patterns": ["Name your creator", "Name your inventor"],
+         "responses": ["That would be Joshua","I was created Joshua", "Joshua is my creator"],
+	 "context_set": ""
+	},
+        {"tag": "joke",
+         "patterns": ["tell me a joke", "make me laugh", "tell me a science joke", "tell me something funny" ],
+         "responses": ["How do you make holy water? you boil the hell out of it","what kind of bees make milk instead of honey?Boobies", "Did you hear oxygen went on a date with potassium? A: It went OK."],
+	 "context_set": ""
+	},
+	{"tag": "bookings",
+         "patterns": ["Book me a ticket", "Make reservation for hotels", "book me a cab","book me a table at restraunts"],
+         "responses": ["Yeah i will do that for you","Sure thing why not?","let me check for the availability"],
+	 "context_set": ""
+	},
+	{"tag": "stories",
+         "patterns": ["Tell me a story"],
+         "responses": ["I can't think of anything right now","it would be too long for me to speak","you would get bored if i do so"],
+	 "context_set": ""
+	},
+        {"tag": "emergency",
+         "patterns": ["Contact 999", "Contact ambulance!", "Contact police!", "Emergencey!", "Mayday"],
+         "responses": ["Hang in there!"],
+         "context": [""]
+        },
+        {"tag": "bankbalance",
+         "patterns": ["bank", "balance", "bank balance", "bank balance today, bank balance this month"],
+         "responses": ["Which bank are you looking for?", "Which bank are you referring to?"],
+	 "context_set": "balance"
+	},
+        {"tag": "profit",
+         "patterns": ["profit", "profit as of today", "profit this month", "profit this quarter", "profit this year"],
+         "responses": ["Okay. Looking up into profit. Please give me a moment"],
+	 "context_set": "profit"
+	},
+        {"tag": "sales",
+         "patterns": ["sales", "sales as of today", "sales this month", "sales this quarter", "sales this year"],
+         "responses": ["Okay. Looking up into sales. Please give me a moment"],
+	 "context_set": "sales"
+	},
+        {"tag": "revenue",
+         "patterns": ["revenue", "revenue as of today", "revenue this month", "revenue this quarter", "revenue this year"],
+         "responses": ["Okay. Looking up into revenue. Please give me a moment"],
+	 "context_set": "revenue"
+	},
+        {"tag": "income",
+         "patterns": ["income", "income as of today", "income this month", "income this quarter", "income this year"],
+         "responses": ["Okay. Looking up into income. Please give me a moment"],
+	 "context_set": "income"
+	},
+        {"tag": "metrobank",
+         "patterns": ["metrobank", "metro bank"],
+         "responses": ["https://www.metrobank.com.ph/home"],
+	 "context_set": "metrobank"
+	},
+        {"tag": "bdo",
+         "patterns": ["banco de oro", "bdo"],
+         "responses": ["https://www.bdo.com.ph/personal"],
+	 "context_set": "bdo"
+	},
+        {"tag": "maybank",
+         "patterns": ["maybank"],
+         "responses": ["https://www.maybank2u.com.my/home/m2u/common/login.do"],
+	 "context_set": "maybank"
+	},
+        {"tag": "securitybank",
+         "patterns": ["security bank", "securitybank"],
+         "responses": ["https://www.securitybank.com/"],
+	 "context_set": "security bank"
+	},
+        {"tag": "bpi",
+         "patterns": ["bpi"],
+         "responses": ["https://www.bpi.com.ph/"],
+	 "context_set": "bpi"
+	},
+        {"tag": "report",
+         "patterns": ["generate report"],
+         "responses": ["Okay. Generating report"],
+	 "context_set": "report"
+	},
+	{"tag": "google",
+         "patterns": ["Who", "What", "When", "Where", "Why", "How", "Are", "Is", "Do", "Does", "Search", "Google", "googling", "google it"],
+         "responses": [ "I will google it for you", "Perhaps google will help you", "These are the information I found on google"],
+	 "context_set": "google"
+	},
+        {"tag": "request",
+         "patterns": ["Can you do me a favour?", "Can you help me?", "can you", "do you"],
+         "responses": [ "Yes!", "Yes, of course!", "No", "Nope"],
+	 "context_set": ""
+	}
+   ]
+}
